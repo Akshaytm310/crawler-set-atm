@@ -1,25 +1,31 @@
 # crawler-set-atm
 
-CSRF Middleware and Protections Research, Crawler, and PoC
+CSRF Middleware Analysis, Crawler Development, and Proof of Concept (PoC)
 
-This repository contains a project focused on researching Cross-Site Request Forgery (CSRF) middleware and protections, creating a crawler to identify CSRF vulnerabilities, and developing an HTML form Proof of Concept (PoC) to demonstrate these vulnerabilities.
+This repository centers around a project that explores Cross-Site Request Forgery (CSRF) protections, develops a web crawler to detect CSRF vulnerabilities, and includes an HTML-based Proof of Concept (PoC) to demonstrate exploitation scenarios.
+
 
 Project Breakdown
 
-Step 1: Research CSRF Middleware and Protections  
-- Objective: Understand how CSRF middleware and protections function.  
-- Outcome: A thorough understanding of how CSRF tokens are used for preventing unauthorized actions and how applications mitigate CSRF attacks using headers, tokens, or SameSite cookie attributes.
+Step 1: CSRF Middleware & Protection Research
+Goal: Gain a comprehensive understanding of how CSRF protection mechanisms work.
 
-Step 2: CSRF Vulnerability Crawler  
-- Objective: Develop a crawler to scan web applications for CSRF vulnerabilities.  
-- Key Features:  
-  - Scans for missing or improperly implemented CSRF tokens in forms or HTTP headers.  
-  - Identifies web applications that may be susceptible to CSRF attacks.
+Outcome: Insights into the use of CSRF tokens, security headers, and SameSite cookie attributes for preventing unauthorized actions triggered by malicious third parties.
 
-Step 3: CSRF Proof of Concept (PoC)  
-- Objective: Create an HTML page demonstrating a CSRF vulnerability.  
-- PoC Features:  
-  - An HTML form designed to trigger an unauthorized action in a target application, exploiting a missing or faulty CSRF token.
+Step 2: CSRF Vulnerability Crawler
+Goal: Build an automated crawler to scan web applications for CSRF-related weaknesses.
+
+Features:
+
+    Detects forms and endpoints lacking CSRF tokens or using them improperly.
+
+    Identifies potential CSRF exposure in HTTP headers or form submissions.
+
+Step 3: CSRF Exploitation PoC
+Goal: Demonstrate a real-world CSRF vulnerability via an HTML-based PoC.
+
+PoC Capabilities:
+    Simulates unauthorized actions in a vulnerable application by crafting a malicious form that bypasses CSRF protection.
 
 How to Use  
 1. Clone the repository.  
